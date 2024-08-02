@@ -1,15 +1,30 @@
 package TestNG.demo1;
 
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class ClassTwo {
+
+
+    @BeforeSuite
+    public void beforeMySuite()
+    {
+        System.out.println("***** beforeMySuite *****");
+    }
+
+    @AfterSuite
+    public void afterMySuite()
+    {
+        System.out.println("***** afterMySuite *****");
+    }
 
     @Test
     public void classTwoTest1()
     {
         System.out.println("classTwoTest1");
     }
-    @Test
+    @Test (groups = "email")
     public void classTwoTest2()
     {
         System.out.println("classTwoTest2");

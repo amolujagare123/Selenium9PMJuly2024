@@ -1,6 +1,6 @@
-<suite name="project name">
+<suite name="Real sites">
 
-    <test name="module 1">
+    <test name="all sites">
         <classes>
             <class name ="TestNG.demo2.JobSites"/>
             <class name ="TestNG.demo2.TutorialSites"/>

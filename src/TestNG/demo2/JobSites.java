@@ -20,30 +20,30 @@ public class JobSites {
     @AfterClass// this method will execute after last Test method in this class
     public  void closeBrowser() throws InterruptedException {
         Thread.sleep(2000);
-        driver.close();
+      //  driver.close();
     }
 
-    @Test
+    @Test(priority = 5 ,enabled = false)
     public void naukri() {
         driver.get("http://naukri.com");
     }
 
-    @Test
+    @Test (priority = 1)
     public void monsterIndia() {
         driver.get("http://monsterindia.com");
     }
 
-    @Test
+    @Test (priority = 2)
     public void shine() {
         driver.get("http://shine.com");
     }
 
-    @Test
+    @Test(priority = 3)
     public void timesJobs() {
         driver.get("http://timesjobs.com");
     }
 
-    @Test
+    @Test(priority = 4)
     public void freshersworld() {
         driver.get("http://freshersworld.com");
     }

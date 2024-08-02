@@ -1,0 +1,22 @@
+<suite name="project name">
+
+    <parameter name="myUrl" value ="http://stock.scriptinglogic.net/"/>
+    <parameter name="myUsername" value ="xyz"/>
+    <parameter name="myPassword" value ="abc"/>
+
+
+    <test name="module 1">
+
+        <classes>
+            <class name ="TestNG.demoParam.ClassOne"/>
+            <class name ="TestNG.demoParam.ClassThree"/>
+        </classes>
+    </test>
+
+    <test name="module 2">
+        <classes>
+            <class name ="TestNG.demoParam.ClassTwo"/>
+        </classes>
+    </test>
+
+</suite>
