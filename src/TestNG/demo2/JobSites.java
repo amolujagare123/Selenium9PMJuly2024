@@ -2,6 +2,7 @@ package TestNG.demo2;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -31,6 +32,10 @@ public class JobSites {
     @Test (priority = 1)
     public void monsterIndia() {
         driver.get("http://monsterindia.com");
+
+        Assert.assertEquals("monster",
+                driver.getTitle(),
+                "wrong page");
     }
 
     @Test (priority = 2)
