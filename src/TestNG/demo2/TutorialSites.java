@@ -6,22 +6,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TutorialSites {
+public class TutorialSites extends Base{
 
-    WebDriver driver;
-    //annotation
-    @BeforeClass // this method will execute before first Test method in this class
-    public  void openBrowser()
-    {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
 
-    @AfterClass// this method will execute after last Test method in this class
-    public  void closeBrowser() throws InterruptedException {
-        Thread.sleep(2000);
-        driver.close();
-    }
 
     @Test
     public void w3schools() {

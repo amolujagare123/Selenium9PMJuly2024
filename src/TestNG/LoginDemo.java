@@ -16,7 +16,7 @@ public class LoginDemo {
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://stock.scriptinglogic1.in/");
+        driver.get("https://stock.scriptinglogic.in/");
 
         WebElement txtUsername = driver.findElement(By.id("login-username"));
         txtUsername.sendKeys("admin");
